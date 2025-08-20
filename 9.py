@@ -1,20 +1,23 @@
-#Ej 6
+#Ej9
+magnitud : float = float(input("ingrese magniutud del terremoto"))
 
-from statistics import mode, median, mean
-import random
-numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+if (magnitud > 3) :
+    print ("Muy leve")
 
-moda = mode(numeros_aleatorios)
-mediana = median(numeros_aleatorios)
-media = mean(numeros_aleatorios)
+elif (magnitud >=3 and magnitud < 4):
+    print ("Leve")
 
-print(f"moda={moda}, mediana={mediana}, media={media}")
+elif (magnitud >= 4 and magnitud < 5):
+    print("Moderado")
 
-if (moda == mediana and moda == media):
-    print("Sin sesgo")
+elif (magnitud >= 5 and magnitud < 6):
+    print("Fuerte")
 
-elif (media > mediana and mediana > moda):
-    print("Sesgo positivo o a la derecha")
+elif (magnitud >= 6 and magnitud < 7):
+    print("Muy Fuerte")
 
-elif (media < mediana and mediana < moda):
-    print("Sesgo negativo o a la izquierda")
+elif (magnitud >= 7):
+    print("Extremo")
+
+else:
+    print ("Colocar valor correcto")
