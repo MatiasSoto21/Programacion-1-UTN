@@ -1,17 +1,8 @@
-#Ej4
+#Ej5
 
-edad:int = int(input("ingrese su edad"))
+contraseña: str  = str(input("Ingrese la contraseña"))
 
-if (edad >=0 and edad < 12):
-    print("Niño/a")
+if (len(contraseña) >= 8 and len(contraseña) <=14 ):
+    print("Contraseña valida")
 
-elif (edad >= 12 and edad < 18):
-    print("Adolescente")
-
-elif (edad >= 18 and edad < 30):
-    print("Adulto/a joven")
-
-elif (edad >= 30 and edad < 100):
-    print("Adulto/a")
-
-else: print("Ingrese una edad valida")
+else: print("Por favor, ingrese una contraseña entre 8 y 14")
