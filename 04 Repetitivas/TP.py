@@ -117,3 +117,18 @@ for i in range(5): #Pruebo solo 5 despues lo cambio a 100
 
 print(f"Positivos: {positivos}\n Negativos {negativos}\n pares {pares}\n impares{impares}")
   
+#Ej9
+cantidad_num:int = 0
+media:float = 0
+for i in range(5): #Pruebo 5 nums pero son 100
+  media += int(input("Ingrese un numero:"))
+  cantidad_num += 1
+print(f"La media de los numeros es de : {media/cantidad_num}")
+
+#Ej10
+num:str = str(input("Ingrese un num"))
+invertido:str = ""
+
+for i in num[::-1]: #[::-1] invierte el str y lo recorro al reves
+  invertido += i 
+print(f"El numero invertido es: {invertido}")  
