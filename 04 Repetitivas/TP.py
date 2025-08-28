@@ -80,9 +80,40 @@ while True:
     print("Error, ingresa num entero")
 
 
- #Ej6
+#Ej6
 for i in range (100,-1, -2):
   print(i)
 
+#Ej7
+num : int = int(input("Ingresa numero"))
+suma :int = 0
+for i in range(0, num+1):
+  suma += i
+print(f"Suma: {suma}")
 
+#Ej8
+pares:int = 0
+impares:int = 0
+negativos:int = 0
+positivos:int = 0
+
+for i in range(5): #Pruebo solo 5 despues lo cambio a 100
+  num:int = int(input("Ingrese un num: "))
+  if(num < 0):
+    if(num % 2 == 0):
+     negativos += 1
+     pares += 1
+    else:
+     negativos += 1
+     impares += 1
+
+  if(num > 0):
+    if(num % 2 == 0):
+     positivos += 1
+     pares += 1
+    else:
+     positivos += 1
+     impares += 1
+
+print(f"Positivos: {positivos}\n Negativos {negativos}\n pares {pares}\n impares{impares}")
   
