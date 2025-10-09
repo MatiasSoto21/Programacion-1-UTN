@@ -1,0 +1,6 @@
+nombre,precio,cantidad
+lapiz,$15.00,20
+libro,$20.00,10
+goma,$5.00,100
+tijera,$15.50,17
+regla,$20,2
