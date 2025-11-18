@@ -80,7 +80,7 @@ numero = int(input("Ingrese un número entero positivo para sumar sus digitos: "
 resultado = suma_digitos(numero)
 print(f"La suma de los dígitos de {numero} es: {resultado}")
 
-#Ej7
+#eEj7
 def contar_bloques(n):
     if n == 1:
         return 1
